@@ -1,0 +1,214 @@
+:root {
+  --c-light: #eee;
+  --c-accent: #e53636;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-h: 'Playfair Display', serif;
+  --gutter: 1.5rem;
+  --gutter-l: 3rem;
+  --gutter-xl: 6rem;
+  --corner: 0.5rem;
+  --easing-elastic: cubic-bezier(0.86, 0, 0.07, 1);
+}
+/* reset */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* base */
+body {
+  font-family: var(--font);
+}
+
+/* utilities */
+.container {
+  max-width: 80rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+@media (width < 80rem) {
+  .container {
+  }
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  padding-inline: var(--gutter);
+  z-index: 2;
+}
+
+  /* mobile nav */
+  nav.mobile {
+    grid-column: 2;
+  }
+
+    /* burger */
+    .nav-icon {
+      width: 2.1rem;
+      height: 1.5rem;
+      position: relative;
+      transform: rotate(0deg);
+      transition: .5s var(--easing-elastic);
+      cursor: pointer;
+
+      & span {
+        display: block;
+        position: absolute;
+        height: 0.2rem;
+        width: 100%;
+        background: var(--c-light);
+        border-radius: var(--corner);
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: all 0.6s var(--easing-elastic);
+
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2), &:nth-child(3) {
+          top: 45%;
+        }
+        &:nth-child(4) {
+          top: 90%;
+        }
+      }
+    }
+    nav.mobile.--open .nav-icon span {
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      &:nth-child(1), &:nth-child(4) {
+        top: 45%;
+        width: 0;
+        left: 50%;
+      }
+    }
+
+/* sliders */  
+.hero {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* position: relative; */
+  
+  & .crossfade {
+    grid-column: 1;    
+    grid-row: 1;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+
+    & img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: opacity(0.5);
+      opacity: 0;
+      transform: scale(1.1) rotate(2deg);
+      animation: CrossFade 24s infinite;
+
+      &:nth-child(3) {
+        animation-delay: 6s;
+      }
+      &:nth-child(2) {
+        animation-delay: 12s;
+      }
+      &:nth-child(1) {
+        animation-delay: 18s;
+      }
+    }
+  }
+
+  & article {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 10rem;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gutter-xl);
+
+    & .subtitle {
+      color: #c7ab8b;
+    }
+
+    & h1 {
+      font-family: var(--font-h);
+      font-size: clamp(1.8rem, 5vw, 4.8rem);
+      line-height: clamp(1.8rem, 5vw, 4.8rem);
+      letter-spacing: -0.1rem;
+      font-weight: 400;
+      color: var(--c-light);
+    }
+
+    & .cta {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      width: fit-content;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+
+      & span {
+        padding: 0.9rem 1.5rem;
+      }
+      & i {
+        width: 3.5rem;
+        height: 100%;
+        background-color: var(--c-accent);
+        display: grid;
+        place-content: center;
+      }
+      & svg {
+        height: 20px;
+        width: 20px;
+        fill: var(--c-light);
+      }
+    }
+  }
+}
+
+@keyframes CrossFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+
+  & .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
