@@ -4,72 +4,256 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo</title>
+  <title>Assenzio Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  /> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   <header>
+    <div class="right">
+      <a href="" class="logo-mobile">
+        <img src="/img/logo-small.svg" width="50px" alt="">
+      </a>
+      <div class="language-bar small-caps">
+        <img src="/img/icons/globe.svg" width="16px" alt="">
+        <span>English</span>
+        <img src="/img/icons/chevron.svg" width="16px" alt="">
+      </div>
+    </div>
     <a href="" class="logo">
-      <img src="/img/logo-white.svg" alt="" width="120px">
+      <img src="/img/logo-white.svg" alt="" width="180px" height="93">
     </a>
     <nav class="mobile">
-      <div class="nav-icon">
-        <span></span> <span></span> <span></span> <span></span>
+      <div class="burger small-caps">
+        <span>Menu</span>
+        <div class="nav-icon">
+          <span></span> <span></span> <span></span> <span></span>
+        </div>
       </div>
+      <article class="nav">
+        <div class="cta">
+          <a href="" class="book btn small-caps">
+            <span data-content="Check prices">Check prices</span>
+            <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.3,16.2h-1.2c-0.4-4.6-4.4-8.3-9.4-8.6v-2h1.1c0.4,0,0.7-0.3,0.7-0.6s-0.3-0.6-0.7-0.6h-3.4c-0.4,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h1v2c-5,0.3-9,4-9.3,8.6H0.7c-0.4,0-0.6,0.3-0.6,0.7s0.3,0.7,0.6,0.7h1.9H3h18.2h0.3h1.8c0.4,0,0.7-0.3,0.7-0.7S23.6,16.2,23.3,16.2z M12.1,8.9c4.6,0,8.4,3.2,8.7,7.3H3.3C3.7,12.1,7.5,8.9,12.1,8.9z"></path></svg></i>
+          </a>
+        </div>
+        <ul class="main-nav">
+          <li><a href="" style="--d: 0">Home</a></li>
+          <li><a href="" style="--d: 1">Rooms</a></li>
+          <li><a href="" style="--d: 2">Special Offers</a></li>
+          <li><a href="" style="--d: 3">About</a></li>
+          <li><a href="" style="--d: 4">Contact</a></li>
+        </ul>
+        <address style="--d: 5">
+          <h4 class="small-caps">Address</h4>
+          <p>Wenzigova 3, 120 Praha<br>Czechia</p>
+          <h4 class="small-caps">Contact</h4>
+          <p>+420 774 455 257 <br>info@hotelassenzioprague.com</p>
+          <ul class="socials small-caps">
+            <li>IG</li>
+            <li>FB</li>
+          </ul>
+        </address>
+        <img src="/img/logo-small.svg" class="nav-bg" alt="">
+      </article>
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="crossfade"><!-- https://codepen.io/dimaZubkov/pen/rLxrXZ -->
-        <img src="img/Lobby_1-1600x990.webp" alt="">
-        <img src="img/Junior_Suite_3-1600x1069.webp" alt="">
-        <img src="img/Staircase-1600x1069.webp" alt="">
-        <img src="img/Breakfast_room_4-1600x1069.webp" alt="">
-      </div>
-
-      <article class="container">
-        <div class="subtitle">A historic hotel in Prague's New Town</div>
-        <h1>Hotel Assenzio</h1>
-        <a href="" class="cta">
-          <span>
-            Check prices
-          </span>
-          <i class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.3,16.2h-1.2c-0.4-4.6-4.4-8.3-9.4-8.6v-2h1.1c0.4,0,0.7-0.3,0.7-0.6s-0.3-0.6-0.7-0.6h-3.4c-0.4,0-0.6,0.3-0.6,0.6
-                s0.3,0.6,0.6,0.6h1v2c-5,0.3-9,4-9.3,8.6H0.7c-0.4,0-0.6,0.3-0.6,0.7s0.3,0.7,0.6,0.7h1.9H3h18.2h0.3h1.8c0.4,0,0.7-0.3,0.7-0.7
-                S23.6,16.2,23.3,16.2z M12.1,8.9c4.6,0,8.4,3.2,8.7,7.3H3.3C3.7,12.1,7.5,8.9,12.1,8.9z"></path></svg>
-            </i>
+    <div class="crossfade inset"><!-- https://codepen.io/dimaZubkov/pen/rLxrXZ -->
+      <img src="img/Breakfast_room_4-1600x1069.webp" alt="">
+      <img src="img/Staircase-1600x1069.webp" alt="">
+      <img src="img/Junior_Suite_3-1600x1069.webp" alt="">
+      <img src="img/Lobby_1-1600x990.webp" alt="">
+    </div>
+    <section class="hero container">
+      <div class="subtitle small-caps"><span data-animation="y100">A historic hotel in Prague's New Town</span></div>
+      <h1><span data-animation="y100">Hotel Assenzio</span></h1>
+      <div class="fakeh1" style="margin-top: -1.5rem;"><span data-animation="y100">Your cosy stay in Prague</span></div>
+      <div class="cta" data-animation="fade">
+        <a href="" class="book btn small-caps">
+          <span data-content="Check prices">Check prices</span>
+          <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.3,16.2h-1.2c-0.4-4.6-4.4-8.3-9.4-8.6v-2h1.1c0.4,0,0.7-0.3,0.7-0.6s-0.3-0.6-0.7-0.6h-3.4c-0.4,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h1v2c-5,0.3-9,4-9.3,8.6H0.7c-0.4,0-0.6,0.3-0.6,0.7s0.3,0.7,0.6,0.7h1.9H3h18.2h0.3h1.8c0.4,0,0.7-0.3,0.7-0.7S23.6,16.2,23.3,16.2z M12.1,8.9c4.6,0,8.4,3.2,8.7,7.3H3.3C3.7,12.1,7.5,8.9,12.1,8.9z"></path></svg></i>
         </a>
-      </article>
-
+        <a href="" class="discover small-caps">Choose your room
+          <img src="/img/icons/bed.svg" width="40px" alt="">
+        </a>
+      </div>
     </section>
 
-    <section style="height: 100vh;"></section>
+    <section class="about">
+      <article class="container">
+        <div class="content">
+          <div class="headers">
+            <div class="subtitle small-caps">
+              <span style="--d: 0">What makes us different</span>
+            </div>
+            <h2><span>Hotel Assenzio in detail</span></h2>
+            <p><span>We have put our heart and soul and creativity into making your stay as pleasant as possible. Hotel Assenzio offers everything your heart desires.</span></p>
+            <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ut animi minus amet sequi deserunt nulla enim voluptate optio quia magnam corrupti et in commodi minima necessitatibus, atque, illo quaerat.</span></p>
+          </div>
+          <ul class="facilities">
+            <li><img src="/img/icons/24h.svg" width="32px" alt="">24-hour front desk</li>
+            <li><img src="/img/icons/breakfast.svg" width="32px" alt="">Excellent breakfast</li>
+            <li><img src="/img/icons/air-cond.svg" width="32px" alt="">Air conditioning</li>
+            <li><img src="/img/icons/soundproof.svg" width="32px" alt="">Soundproof rooms</li>
+            <li><img src="/img/icons/room-service.svg" width="32px" alt="">Room service</li>
+            <li><img src="/img/icons/parking.svg" width="32px" alt="">Private parking</li>
+          </ul>
+        </div>
+        <div class="triple">
+          <a href="" class="card left">
+            <img src="/img/Staircase-1600x1069.webp" class="background" alt="">
+            <h3>Facilities</h3>
+          </a>
+          <a href="" class="card">
+            <img src="/img/Lobby_1-1600x990.webp" class="background" alt="">
+            <h3>About hotel</h3>
+          </a>
+          <a href="" class="card">
+            <img src="/img/Junior_Suite_3-1600x1069.webp" class="background" alt="">
+            <h3>Special offers</h3>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="rooms">
+      <article class="content container --small --centered">
+        <div class="subtitle small-caps">Find rest and relaxation</div>
+        <h2><span>Rooms for comfort & relax</span></h2>
+        <p>Located in the middle of Prague's New Town, Hotel Assenzio allows you to find peace from the hustle and bustle of everyday life and relax in a breathtaking ambience.</p>
+      </article>
+      <article class="cards embla">
+        <div class="embla__container">
+          <a href="" class="card embla__slide">
+            <img src="/img/Junior_Suite_3-1600x1069.webp" width="800" class="background" alt="">
+            <header>
+              <h3>Single room</h3>
+              <ul>
+                <li><img src="/img/icons/bed.svg" width="18px" alt=""> 1 twin bed</li>
+                <li><img src="/img/icons/person.svg" width="18px" alt="">1 person</li>
+              </ul>
+              <div class="cta btn small-caps">
+                <span data-content="Check prices">See more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.002 4.639">
+                  <path d="M.25 2.264h15.403M13.743.354l1.91 1.91-1.919 2.022"></path>
+                </svg>
+              </div>
+            </header>
+          </a>
+          <a href="" class="card embla__slide">
+            <img src="/img/Staircase-1600x1069.webp" width="800" class="background" alt="">
+            <header>
+              <h3>Double room</h3>
+              <ul>
+                <li><img src="/img/icons/bed.svg" width="18px" alt=""> 1 queen bed</li>
+                <li><img src="/img/icons/person.svg" width="18px" alt="">2 persons</li>
+              </ul>
+              <div class="btn small-caps">See more <img src="/img/icons/chevron.svg" width="12px" alt=""></div>
+            </header>
+          </a>
+          <a href="" class="card embla__slide">
+            <img src="/img/Breakfast_room_4-1600x1069.webp" width="800" class="background" alt="">
+            <header>
+              <h3>Junior suite</h3>
+              <ul>
+                <li><img src="/img/icons/bed.svg" width="18px" alt=""> 1 king bed</li>
+                <li><img src="/img/icons/person.svg" width="18px" alt="">2 persons</li>
+              </ul>
+              <div class="btn small-caps">See more <img src="/img/icons/chevron.svg" width="12px" alt=""></div>
+            </header>
+          </a>
+          <a href="" class="card embla__slide">
+            <img src="/img/Junior_Suite_3-1600x1069.webp" width="800" class="background" alt="">
+            <header>
+              <h3>Triple room</h3>
+              <ul>
+                <li><img src="/img/icons/bed.svg" width="18px" alt=""> 1 twin & 1 queen beds</li>
+                <li><img src="/img/icons/person.svg" width="18px" alt="">3 persons</li>
+              </ul>
+              <div class="btn small-caps">See more <img src="/img/icons/chevron.svg" width="12px" alt=""></div>
+            </header>
+          </a>
+          <a href="" class="card embla__slide">
+            <img src="/img/Staircase-1600x1069.webp" width="800" class="background" alt="">
+            <header>
+              <h3>Double maisonette</h3>
+              <ul>
+                <li><img src="/img/icons/bed.svg" width="18px" alt=""> 1 queen bed</li>
+                <li><img src="/img/icons/person.svg" width="18px" alt="">2 persons</li>
+              </ul>
+              <div class="btn small-caps">See more <img src="/img/icons/chevron.svg" width="12px" alt=""></div>
+            </header>
+          </a>
+        </div>
+
+      </article>
+    </section>
+
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <footer>
+    <article>
+      <img src="/img/Lobby_1-1600x990.webp" alt="" loading="lazy">
+      <div class="content container --centered">
+        <img src="/img/logo-white.svg" width="150" alt="">
+        <h2><span>Let's plan your stay in Prague</span></h2>
+        <div class="cta">
+          <a href="" class="book btn small-caps">
+            <span data-content="Choose your room">Choose your room</span>
+            <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.3,16.2h-1.2c-0.4-4.6-4.4-8.3-9.4-8.6v-2h1.1c0.4,0,0.7-0.3,0.7-0.6s-0.3-0.6-0.7-0.6h-3.4c-0.4,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h1v2c-5,0.3-9,4-9.3,8.6H0.7c-0.4,0-0.6,0.3-0.6,0.7s0.3,0.7,0.6,0.7h1.9H3h18.2h0.3h1.8c0.4,0,0.7-0.3,0.7-0.7S23.6,16.2,23.3,16.2z M12.1,8.9c4.6,0,8.4,3.2,8.7,7.3H3.3C3.7,12.1,7.5,8.9,12.1,8.9z"></path></svg></i>
+          </a>
+        </div>
+      </div>
+    </article>
+    <address class="container">
+      <div>
+        <h4 class="small-caps">Address</h4>
+        <p>Wenzigova 3, 120 Praha</p>
+        <p>Czechia</p>
+      </div>
+      <div>
+        <h4 class="small-caps">Contact</h4>
+        <p>+420 774 455 257</p>
+        <p>info@hotelassenzioprague.com</p>
+      </div>
+      <ul class="socials small-caps">
+        <li>IG</li>
+        <li>FB</li>
+      </ul>
+    </address>
+    <hr>
+    <p class="copyright container">	&#169; Created by <a href="https://www.leohotelsgroup.com" title="Professional Hotel Management" target="_blank"><b>Leo Hotels Group</b></a></p>
+  </footer>
+  <div class="overlay"></div>
+  <div class="loading"></div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
+  <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js" defer></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="/js/main.js" defer></script>
 </body>
 </html>
-<!-- <div class="swiper"> -->
-  <!-- Additional required wrapper -->
-  <!-- <div class="swiper-wrapper"> -->
-    <!-- Slides -->
-    <!-- <div class="swiper-slide">
+<!-- <div class="swiper">
+  
+  <div class="swiper-wrapper">
+    
+    <div class="embla__slide">
       <img src="img/Lobby_1-1600x990.webp" alt="">
     </div>
-    <div class="swiper-slide">
+    <div class="embla__slide">
       <img src="img/Junior_Suite_3-1600x1069.webp" alt="">
     </div>
-    <div class="swiper-slide">
+    <div class="embla__slide">
       <img src="img/Staircase-1600x1069.webp" alt="">
     </div>
-    <div class="swiper-slide">
+    <div class="embla__slide">
       <img src="img/Breakfast_room_4-1600x1069.webp" alt="">
     </div>
   </div>
